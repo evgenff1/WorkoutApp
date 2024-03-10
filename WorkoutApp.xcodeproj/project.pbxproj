@@ -26,7 +26,7 @@
 		27BEECD92B9C62FE0019EAF1 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECD82B9C62FE0019EAF1 /* Date + ext.swift */; };
 		27E9B1212B99B64F004354BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1202B99B64F004354BA /* TabBarController.swift */; };
 		27E9B1242B99BAAB004354BA /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1232B99BAAB004354BA /* UIColor + ext.swift */; };
-		27E9B1272B99BD31004354BA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1262B99BD31004354BA /* Resources.swift */; };
+		27E9B1272B99BD31004354BA /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1262B99BD31004354BA /* Resouces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,7 @@
 		27BEECD82B9C62FE0019EAF1 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		27E9B1202B99B64F004354BA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		27E9B1232B99BAAB004354BA /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
-		27E9B1262B99BD31004354BA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		27E9B1262B99BD31004354BA /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				27E9B1252B99BAD9004354BA /* Extensions */,
-				27E9B1262B99BD31004354BA /* Resources.swift */,
+				27E9B1262B99BD31004354BA /* Resouces.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 				27BEECCE2B9B3D5E0019EAF1 /* SecondaryButton.swift in Sources */,
 				27BEECC92B9B05170019EAF1 /* ProgressController.swift in Sources */,
 				2703C2F42B9A2B2400B83330 /* NavBarController.swift in Sources */,
-				27E9B1272B99BD31004354BA /* Resources.swift in Sources */,
+				27E9B1272B99BD31004354BA /* Resouces.swift in Sources */,
 				27E9B1242B99BAAB004354BA /* UIColor + ext.swift in Sources */,
 				27BEECD22B9C26C00019EAF1 /* BaseView.swift in Sources */,
 				27BEECD72B9C4A2F0019EAF1 /* WeekdayView.swift in Sources */,
