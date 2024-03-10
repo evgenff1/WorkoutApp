@@ -21,6 +21,9 @@
 		27BEECCE2B9B3D5E0019EAF1 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECCD2B9B3D5E0019EAF1 /* SecondaryButton.swift */; };
 		27BEECD02B9C262D0019EAF1 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECCF2B9C262D0019EAF1 /* OverviewNavBar.swift */; };
 		27BEECD22B9C26C00019EAF1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECD12B9C26C00019EAF1 /* BaseView.swift */; };
+		27BEECD52B9C43C10019EAF1 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECD42B9C43C10019EAF1 /* WeekView.swift */; };
+		27BEECD72B9C4A2F0019EAF1 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECD62B9C4A2F0019EAF1 /* WeekdayView.swift */; };
+		27BEECD92B9C62FE0019EAF1 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECD82B9C62FE0019EAF1 /* Date + ext.swift */; };
 		27E9B1212B99B64F004354BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1202B99B64F004354BA /* TabBarController.swift */; };
 		27E9B1242B99BAAB004354BA /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1232B99BAAB004354BA /* UIColor + ext.swift */; };
 		27E9B1272B99BD31004354BA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B1262B99BD31004354BA /* Resources.swift */; };
@@ -43,6 +46,9 @@
 		27BEECCD2B9B3D5E0019EAF1 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		27BEECCF2B9C262D0019EAF1 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		27BEECD12B9C26C00019EAF1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		27BEECD42B9C43C10019EAF1 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		27BEECD62B9C4A2F0019EAF1 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		27BEECD82B9C62FE0019EAF1 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		27E9B1202B99B64F004354BA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		27E9B1232B99BAAB004354BA /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		27E9B1262B99BD31004354BA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -164,10 +170,20 @@
 		27BEECCC2B9B3D000019EAF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27BEECD32B9C439A0019EAF1 /* WeekView */,
 				27BEECCD2B9B3D5E0019EAF1 /* SecondaryButton.swift */,
 				27BEECCF2B9C262D0019EAF1 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		27BEECD32B9C439A0019EAF1 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				27BEECD42B9C43C10019EAF1 /* WeekView.swift */,
+				27BEECD62B9C4A2F0019EAF1 /* WeekdayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 		27E9B1222B99BA81004354BA /* Helpers */ = {
@@ -184,6 +200,7 @@
 			children = (
 				27E9B1232B99BAAB004354BA /* UIColor + ext.swift */,
 				2703C2F82B9AF0EC00B83330 /* UIView + ext.swift */,
+				27BEECD82B9C62FE0019EAF1 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BEECD52B9C43C10019EAF1 /* WeekView.swift in Sources */,
+				27BEECD92B9C62FE0019EAF1 /* Date + ext.swift in Sources */,
 				27BEECCB2B9B05420019EAF1 /* SettingsController.swift in Sources */,
 				272C07872B98B57D0023B996 /* OverviewController.swift in Sources */,
 				27BEECD02B9C262D0019EAF1 /* OverviewNavBar.swift in Sources */,
@@ -271,6 +290,7 @@
 				27E9B1272B99BD31004354BA /* Resources.swift in Sources */,
 				27E9B1242B99BAAB004354BA /* UIColor + ext.swift in Sources */,
 				27BEECD22B9C26C00019EAF1 /* BaseView.swift in Sources */,
+				27BEECD72B9C4A2F0019EAF1 /* WeekdayView.swift in Sources */,
 				2703C2F72B9A311400B83330 /* BaseController.swift in Sources */,
 				272C07852B98B57D0023B996 /* SceneDelegate.swift in Sources */,
 			);
