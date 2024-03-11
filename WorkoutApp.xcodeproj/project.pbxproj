@@ -10,6 +10,7 @@
 		2703C2F42B9A2B2400B83330 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C2F32B9A2B2400B83330 /* NavBarController.swift */; };
 		2703C2F72B9A311400B83330 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C2F62B9A311400B83330 /* BaseController.swift */; };
 		2703C2F92B9AF0EC00B83330 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C2F82B9AF0EC00B83330 /* UIView + ext.swift */; };
+		270B81AD2B9EE82C001D1DEB /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B81AC2B9EE82C001D1DEB /* BaseInfoView.swift */; };
 		272C07832B98B57D0023B996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07822B98B57D0023B996 /* AppDelegate.swift */; };
 		272C07852B98B57D0023B996 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07842B98B57D0023B996 /* SceneDelegate.swift */; };
 		272C07872B98B57D0023B996 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07862B98B57D0023B996 /* OverviewController.swift */; };
@@ -33,6 +34,7 @@
 		2703C2F32B9A2B2400B83330 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		2703C2F62B9A311400B83330 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		2703C2F82B9AF0EC00B83330 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
+		270B81AC2B9EE82C001D1DEB /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		272C077F2B98B57D0023B996 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C07822B98B57D0023B996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272C07842B98B57D0023B996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,13 +70,40 @@
 		2703C2F52B9A30B600B83330 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				27BEECC52B9B04870019EAF1 /* Settings */,
+				27BEECC12B9B03F90019EAF1 /* Base */,
+				270B81AE2B9EE893001D1DEB /* Navigation */,
+				27BEECC22B9B041D0019EAF1 /* Overview */,
 				27BEECC42B9B043B0019EAF1 /* Progress */,
 				27BEECC32B9B042F0019EAF1 /* Session */,
-				27BEECC22B9B041D0019EAF1 /* Overview */,
-				27BEECC12B9B03F90019EAF1 /* Base */,
+				27BEECC52B9B04870019EAF1 /* Settings */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		270B81AB2B9EE763001D1DEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				270B81AC2B9EE82C001D1DEB /* BaseInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		270B81AE2B9EE893001D1DEB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2703C2F32B9A2B2400B83330 /* NavBarController.swift */,
+				27E9B1202B99B64F004354BA /* TabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		270B81AF2B9EE931001D1DEB /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				27BEECD32B9C439A0019EAF1 /* WeekView */,
+				27BEECCF2B9C262D0019EAF1 /* OverviewNavBar.swift */,
+			);
+			path = NavBar;
 			sourceTree = "<group>";
 		};
 		272C07762B98B57D0023B996 = {
@@ -96,9 +125,9 @@
 		272C07812B98B57D0023B996 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
-				27E9B1222B99BA81004354BA /* Helpers */,
 				272C07972B98B7A30023B996 /* Application */,
 				2703C2F52B9A30B600B83330 /* Controllers */,
+				27E9B1222B99BA81004354BA /* Helpers */,
 				272C07982B98B7E40023B996 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
@@ -126,8 +155,7 @@
 		27BEECC12B9B03F90019EAF1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				27E9B1202B99B64F004354BA /* TabBarController.swift */,
-				2703C2F32B9A2B2400B83330 /* NavBarController.swift */,
+				270B81AB2B9EE763001D1DEB /* Views */,
 				2703C2F62B9A311400B83330 /* BaseController.swift */,
 				27BEECD12B9C26C00019EAF1 /* BaseView.swift */,
 			);
@@ -170,9 +198,8 @@
 		27BEECCC2B9B3D000019EAF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27BEECD32B9C439A0019EAF1 /* WeekView */,
+				270B81AF2B9EE931001D1DEB /* NavBar */,
 				27BEECCD2B9B3D5E0019EAF1 /* SecondaryButton.swift */,
-				27BEECCF2B9C262D0019EAF1 /* OverviewNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +311,7 @@
 				27E9B1212B99B64F004354BA /* TabBarController.swift in Sources */,
 				272C07832B98B57D0023B996 /* AppDelegate.swift in Sources */,
 				27BEECC72B9B04C70019EAF1 /* SessionController.swift in Sources */,
+				270B81AD2B9EE82C001D1DEB /* BaseInfoView.swift in Sources */,
 				27BEECCE2B9B3D5E0019EAF1 /* SecondaryButton.swift in Sources */,
 				27BEECC92B9B05170019EAF1 /* ProgressController.swift in Sources */,
 				2703C2F42B9A2B2400B83330 /* NavBarController.swift in Sources */,
