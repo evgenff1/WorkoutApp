@@ -17,9 +17,9 @@ final class WAButton: UIButton {
     private var type: WAButtonType = .primary
     
     private let label: UILabel = {
-        let lable = UILabel()
-        lable.textAlignment = .center
-        return lable
+        let label = UILabel()
+        label.textAlignment = .center
+        return label
     }()
     
     private let iconView: UIImageView = {
