@@ -13,6 +13,7 @@
 		270B81AD2B9EE82C001D1DEB /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B81AC2B9EE82C001D1DEB /* WABaseInfoView.swift */; };
 		270B81B22B9F476F001D1DEB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B81B12B9F476F001D1DEB /* TimerView.swift */; };
 		270B81B42B9F4857001D1DEB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B81B32B9F4857001D1DEB /* ProgressView.swift */; };
+		270B81B82BA1A3A9001D1DEB /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B81B72BA1A3A9001D1DEB /* PercentView.swift */; };
 		272C07832B98B57D0023B996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07822B98B57D0023B996 /* AppDelegate.swift */; };
 		272C07852B98B57D0023B996 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07842B98B57D0023B996 /* SceneDelegate.swift */; };
 		272C07872B98B57D0023B996 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C07862B98B57D0023B996 /* OverviewController.swift */; };
@@ -39,6 +40,7 @@
 		270B81AC2B9EE82C001D1DEB /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		270B81B12B9F476F001D1DEB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		270B81B32B9F4857001D1DEB /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		270B81B72BA1A3A9001D1DEB /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		272C077F2B98B57D0023B996 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C07822B98B57D0023B996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272C07842B98B57D0023B996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				270B81B12B9F476F001D1DEB /* TimerView.swift */,
 				270B81B32B9F4857001D1DEB /* ProgressView.swift */,
+				270B81B72BA1A3A9001D1DEB /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				2703C2F92B9AF0EC00B83330 /* UIView + ext.swift in Sources */,
 				27E9B1212B99B64F004354BA /* TabBarController.swift in Sources */,
 				272C07832B98B57D0023B996 /* AppDelegate.swift in Sources */,
+				270B81B82BA1A3A9001D1DEB /* PercentView.swift in Sources */,
 				27BEECC72B9B04C70019EAF1 /* SessionController.swift in Sources */,
 				270B81AD2B9EE82C001D1DEB /* WABaseInfoView.swift in Sources */,
 				270B81B22B9F476F001D1DEB /* TimerView.swift in Sources */,
