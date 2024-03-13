@@ -73,7 +73,6 @@ final class TimerView: WABaseInfoView {
     private var timerDuration = 0.0
     
     var state: TimerState = .isStopped
-//    var callBack: ((CGFloat) -> Void)?
     
     func configure(with duration: Double, progress: Double) {
         timerDuration = duration
@@ -81,6 +80,9 @@ final class TimerView: WABaseInfoView {
         let tempCurrentValue = progress > duration ? duration : progress
         let goalValueDevider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDevider
+        
+        elapsedTimeValueLable.text = getDisplayedString(from: Int(tempCurrentValue))
+        remainingTimeValueLable.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
 
         progressView.drawProgress(with: CGFloat(percent))
     }
@@ -97,7 +99,6 @@ final class TimerView: WABaseInfoView {
             if self.timerProgress > self.timerDuration {
                 self.timerProgress = self.timerDuration
                 timer.invalidate()
-//                self.callBack?(self.timerProgress)
                 completion(self.timerProgress)
             }
 
@@ -165,5 +166,21 @@ extension TimerView {
 
     override func configureAppearance() {
         super.configureAppearance()
+    }
+}
+
+private extension TimerView {
+    func getDisplayedString(from value: Int) -> String {
+        let seconds = value % 60
+        let minutes = (value / 60) % 60
+        let hours = value / 3600
+
+        let secondsStr = seconds < 10 ? "0\(seconds)" : "\(seconds)"
+        let minutesStr = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        let hoursStr = hours < 10 ? "0\(hours)" : "\(hours)"
+
+        return hours == 0
+            ? [minutesStr, secondsStr].joined(separator: ":")
+            : [hoursStr, minutesStr, secondsStr].joined(separator: ":")
     }
 }

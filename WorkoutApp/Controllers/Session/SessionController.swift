@@ -10,7 +10,7 @@ import UIKit
 class SessionController: WABaseController {
     private let timerView = TimerView()
     
-    private let timerDuration = 3.0
+    private let timerDuration = 5.0
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
@@ -69,13 +69,7 @@ extension SessionController {
         addNavBarButton(at: .right, with: R.Strings.Session.navBarFinish)
         
         timerView.configure(with: timerDuration, progress: 0)
-        
-//        timerView.callBack = { [weak self] progress in
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                self?.navBarRightButtonHandler()
-//                print(progress)
-//            }
-//        }
+    
     }
 }
 
