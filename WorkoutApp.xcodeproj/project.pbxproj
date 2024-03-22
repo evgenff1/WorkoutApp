@@ -93,7 +93,9 @@
 		270B81AB2B9EE763001D1DEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27BEECD12B9C26C00019EAF1 /* WABaseView.swift */,
 				270B81AC2B9EE82C001D1DEB /* WABaseInfoView.swift */,
+				27BEECCD2B9B3D5E0019EAF1 /* WAButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,10 +211,8 @@
 		27BEECC12B9B03F90019EAF1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				27BEECCD2B9B3D5E0019EAF1 /* WAButton.swift */,
 				270B81AB2B9EE763001D1DEB /* Views */,
 				2703C2F62B9A311400B83330 /* WABaseController.swift */,
-				27BEECD12B9C26C00019EAF1 /* WABaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
