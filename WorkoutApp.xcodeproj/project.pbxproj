@@ -29,6 +29,7 @@
 		279929502BB0716B000F7EF4 /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2799294F2BB0716B000F7EF4 /* WAChartsView.swift */; };
 		279929522BB07629000F7EF4 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929512BB07629000F7EF4 /* YAxisView.swift */; };
 		279929542BB07E93000F7EF4 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929532BB07E93000F7EF4 /* XAxisView.swift */; };
+		279929562BB08AD1000F7EF4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929552BB08AD1000F7EF4 /* ChartView.swift */; };
 		27BEECC72B9B04C70019EAF1 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECC62B9B04C70019EAF1 /* SessionController.swift */; };
 		27BEECC92B9B05170019EAF1 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECC82B9B05170019EAF1 /* ProgressController.swift */; };
 		27BEECCB2B9B05420019EAF1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECCA2B9B05420019EAF1 /* SettingsController.swift */; };
@@ -68,6 +69,7 @@
 		2799294F2BB0716B000F7EF4 /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
 		279929512BB07629000F7EF4 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		279929532BB07E93000F7EF4 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
+		279929552BB08AD1000F7EF4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		27BEECC62B9B04C70019EAF1 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		27BEECC82B9B05170019EAF1 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		27BEECCA2B9B05420019EAF1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			children = (
 				279929532BB07E93000F7EF4 /* XAxisView.swift */,
 				279929512BB07629000F7EF4 /* YAxisView.swift */,
+				279929552BB08AD1000F7EF4 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				27BEECD22B9C26C00019EAF1 /* WABaseView.swift in Sources */,
 				27BEECD72B9C4A2F0019EAF1 /* WeekdayView.swift in Sources */,
 				279929132BADC3E2000F7EF4 /* WABarsView.swift in Sources */,
+				279929562BB08AD1000F7EF4 /* ChartView.swift in Sources */,
 				2799290B2BAD9740000F7EF4 /* StatsView.swift in Sources */,
 				2703C2F72B9A311400B83330 /* WABaseController.swift in Sources */,
 				272C07852B98B57D0023B996 /* SceneDelegate.swift in Sources */,
