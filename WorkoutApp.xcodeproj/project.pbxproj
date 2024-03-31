@@ -31,6 +31,7 @@
 		279929542BB07E93000F7EF4 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929532BB07E93000F7EF4 /* XAxisView.swift */; };
 		279929562BB08AD1000F7EF4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929552BB08AD1000F7EF4 /* ChartView.swift */; };
 		279929652BB93722000F7EF4 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929642BB93722000F7EF4 /* SectionHeaderView.swift */; };
+		279929672BB9C198000F7EF4 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279929662BB9C198000F7EF4 /* TrainingCellView.swift */; };
 		27BEECC72B9B04C70019EAF1 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECC62B9B04C70019EAF1 /* SessionController.swift */; };
 		27BEECC92B9B05170019EAF1 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECC82B9B05170019EAF1 /* ProgressController.swift */; };
 		27BEECCB2B9B05420019EAF1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BEECCA2B9B05420019EAF1 /* SettingsController.swift */; };
@@ -72,6 +73,7 @@
 		279929532BB07E93000F7EF4 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		279929552BB08AD1000F7EF4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		279929642BB93722000F7EF4 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		279929662BB9C198000F7EF4 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		27BEECC62B9B04C70019EAF1 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		27BEECC82B9B05170019EAF1 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		27BEECCA2B9B05420019EAF1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				279929642BB93722000F7EF4 /* SectionHeaderView.swift */,
+				279929662BB9C198000F7EF4 /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				27BEECD22B9C26C00019EAF1 /* WABaseView.swift in Sources */,
 				279929652BB93722000F7EF4 /* SectionHeaderView.swift in Sources */,
 				27BEECD72B9C4A2F0019EAF1 /* WeekdayView.swift in Sources */,
+				279929672BB9C198000F7EF4 /* TrainingCellView.swift in Sources */,
 				279929132BADC3E2000F7EF4 /* WABarsView.swift in Sources */,
 				279929562BB08AD1000F7EF4 /* ChartView.swift in Sources */,
 				2799290B2BAD9740000F7EF4 /* StatsView.swift in Sources */,

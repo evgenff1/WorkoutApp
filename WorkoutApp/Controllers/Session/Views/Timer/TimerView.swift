@@ -15,7 +15,7 @@ enum TimerState {
 
 final class TimerView: WABaseInfoView {
     
-    private let elapsedTimeLable: UILabel = {
+    private let elapsedTimeLabel: UILabel = {
         let label = UILabel()
         label.text = R.Strings.Session.elapsedTime
         label.font = R.Fonts.helvelticaRegular(with: 14)
@@ -24,7 +24,7 @@ final class TimerView: WABaseInfoView {
         return label
     }()
 
-    private let elapsedTimeValueLable: UILabel = {
+    private let elapsedTimeValueLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helvelticaRegular(with: 46)
         label.textColor = R.Colors.titleGray
@@ -32,7 +32,7 @@ final class TimerView: WABaseInfoView {
         return label
     }()
 
-    private let remainingTimeLable: UILabel = {
+    private let remainingTimeLabel: UILabel = {
         let label = UILabel()
         label.text = R.Strings.Session.remainingTime
         label.font = R.Fonts.helvelticaRegular(with: 13)
@@ -41,7 +41,7 @@ final class TimerView: WABaseInfoView {
         return label
     }()
 
-    private let remainingTimeValueLable: UILabel = {
+    private let remainingTimeValueLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helvelticaRegular(with: 13)
         label.textColor = R.Colors.titleGray
@@ -89,8 +89,8 @@ final class TimerView: WABaseInfoView {
         let percent = tempCurrentValue / goalValueDevider
         let roundedPercent = Int(round(percent * 100))
         
-        elapsedTimeValueLable.text = getDisplayedString(from: Int(tempCurrentValue))
-        remainingTimeValueLable.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
+        elapsedTimeValueLabel.text = getDisplayedString(from: Int(tempCurrentValue))
+        remainingTimeValueLabel.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
         completedPercentView.configure(with: R.Strings.Session.completed.uppercased(),
                                        andValue: roundedPercent)
         remainigPercetnView.configure(with: R.Strings.Session.remaining.uppercased(),
@@ -151,10 +151,10 @@ extension TimerView {
         setupView(bottomStackView)
         
         [
-            elapsedTimeLable,
-            elapsedTimeValueLable,
-            remainingTimeLable,
-            remainingTimeValueLable
+            elapsedTimeLabel,
+            elapsedTimeValueLabel,
+            remainingTimeLabel,
+            remainingTimeValueLabel
         ].forEach(timeStackView.addArrangedSubview)
 
         [

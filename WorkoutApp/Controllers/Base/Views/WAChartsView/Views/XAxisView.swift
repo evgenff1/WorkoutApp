@@ -21,13 +21,13 @@ final class XAxisView: WABaseView {
         }
 
         data.forEach {
-            let lable = UILabel()
-            lable.font = R.Fonts.helvelticaRegular(with: 9)
-            lable.textColor = R.Colors.inactive
-            lable.textAlignment = .center
-            lable.text = $0.title.uppercased()
+            let label = UILabel()
+            label.font = R.Fonts.helvelticaRegular(with: 9)
+            label.textColor = R.Colors.inactive
+            label.textAlignment = .center
+            label.text = $0.title.uppercased()
 
-            stackView.addArrangedSubview(lable)
+            stackView.addArrangedSubview(label)
         }
     }
 }
