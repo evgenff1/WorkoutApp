@@ -55,11 +55,18 @@ final class TrainingCellView: UICollectionViewCell {
         configureAppearance()
     }
 
-    func configure(with title: String, subtitle: String, isDone: Bool) {
+    func configure(with title: String, subtitle: String, isDone: Bool, roundedType: CellRoundedType) {
         self.title.text = title
         self.subtitle.text = subtitle
 
         checkmarkView.image = isDone ? R.Images.Overview.checkmarkDone : R.Images.Overview.checkmarkNotDone
+
+        switch roundedType {
+        case .all: self.roundCorners([.allCorners], radius: 5)
+        case .bottom: self.roundCorners([.bottomLeft, .bottomRight], radius: 5)
+        case .top: self.roundCorners([.topLeft, .topRight], radius: 5)
+        case .notRounded: self.roundCorners([.allCorners], radius: 0)
+        }
     }
 }
 
